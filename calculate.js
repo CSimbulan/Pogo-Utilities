@@ -1,9 +1,12 @@
+/*This function happens when the page loads.*/
+/*Links the calculate function to the button.*/
 window.onload = function()
 {
 	var addButton = document.getElementById("calculate");
 	addButton.onclick = calculate;
 }
 
+/*Calculates the CPs and IVs*/
 function calculate() {
     var output = document.getElementById("output");
     var input = document.getElementById("name");
