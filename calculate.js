@@ -69,7 +69,7 @@ function calculate() {
         row = table.insertRow(a+1);
         for (var b=0; b<statsArray[0].length; b++) {
             var cell = row.insertCell(b);
-            cell.innerHTML = statsArray[a][b];
+            cell.innerHTML = "<center>" + statsArray[a][b] + "</center>";
         }
     }
 
