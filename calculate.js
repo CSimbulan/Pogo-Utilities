@@ -20,17 +20,13 @@ window.onload = function()
 function calculate() {
 
     /*Get elements from HTML doc and create new table.*/
-    var output = document.getElementById("output");
-    var input = document.getElementById("name");
-    var newT = document.createElement("table");
-    output.appendChild(newT);
+    output = document.getElementById("output");
+    input = document.getElementById("name");
+    table = document.getElementById("ivtable");
 
-    /*Clear the output.*/
-    outputP = output.getElementsByTagName("p");
-    if (outputP.length > 0) {
-        output.removeChild(outputP[outputP.length-1]);
-    }
-
+    /*Clear the table*/
+    table.innerHTML = "";
+    
     /*Match input string to base stats*/
     var name = input.value.toLowerCase();
     for (var i=0; i<window.basestats.length; i++) {
@@ -48,7 +44,7 @@ function calculate() {
 
     /*Table generator.*/
     for (var a=0; a<10; a++) {
-        var row = newT.insertRow(a);
+        var row = table.insertRow(a);
         for (var b=0; b<10; b++) {
             var cell = row.insertCell(b);
             cell.innerHTML = atk + "," + def;
