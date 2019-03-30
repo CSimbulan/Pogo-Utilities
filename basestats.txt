@@ -520,8 +520,8 @@ Dialga,275,211,205
 Palkia,280,215,189
 Heatran,251,213,209
 Regigigas,287,210,221
-Giratina,187,225,284
-Giratina,225,187,284
+Giratina-A,187,225,284
+Giratina-O,225,187,284
 Cresselia,152,258,260
 Phione,162,162,190
 Manaphy,210,210,225
